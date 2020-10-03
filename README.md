@@ -1,8 +1,9 @@
 # Election_Analysis
 
 ## Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election
-auit of a recent local congressional election.
+A Colorado Board of Elections employee approached us to perform an audit of a recent local 
+congressional election, assigning us to use Python to automate the process of answering the 
+following tasks: 
 
 1. Calculate the total number of votes cast.
 2. Get a complete list of candidates who received votes.
@@ -12,22 +13,31 @@ auit of a recent local congressional election.
 
 ## Resources
 - Data Source: election_results.csv
--Software: Python 3.7.6, Visual Studio Code version
+-Software: Python 3.7.6, Visual Studio Code version 1.49.2
 
 ## Summary
 The analysis of the election shows that:
-- There were "x" votes cast in the election.
-- The candidates were:
-	- Candidate 1
-	- Candidate 2
-	- Candidate 3
+- The total number of votes cast in the election was 369,711.
+- The total number of votes by county in the precinct brokedown as such:
+	- Jefferson County: 38,855 votes, for 10.5% of the total vote.
+	- Denver County: 306,055 votes, for 82.8% of the total vote.
+	- Arapahoe County: 24,801 votes, for 6.7% of the total vote.
+- Denver County had the largest number of votes in the precinct, with 306,055 votes. 
+- The candidates receiving votes were:
+	- Charles Casper Stockham
+	- Diana DeGette
+	- Raymon Anthony Doane
 - The candidate results were:
-	- Candidate 1 received x% of the vote and  y number of votes.
-	- Candidate 2 received x% of the vote and y number of votes.
-	- Candidate 3 received x% of the vote and y number of votes.
+	- Charles Casper Stockham received 23.0% of the vote, with 85,213 total votes.
+	- Diana DeGette received 73.8% of the vote, with 272,892 total votes.
+	- Raymon Anthony Doane received 3.1% of the vote, with 11,606 total votes. 
 - The winner of the election was:
-	- Candidate (1,2,3), who received x% of the vote and y number of votes
+	- Diana DeGette was the winner of the election, receiving 272,892 votes for 73.8% 
+	of the total votes. 
 
-## Challenge Overview
+![2018 Stock Performance](https://github.com/greensleeves8/stock-analysis/blob/master/Resources/2018_Stock_Performance.png "2018 Stock Performance")
 
 ## Challenge Summary
+Election-Audit Summary: In a summary statement, provide a business proposal to the election 
+commission on how this script can be used—with some modifications—for any election. Give at 
+least two examples of how this script can be modified to be used for other elections.
