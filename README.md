@@ -45,14 +45,14 @@ The analysis of the election shows that:
 ## Challenge Summary
 The code script used for this analysis should be able to be used with minimal adaptation for
 other elections, provided that the source data is a similarly formatted .CSV file. The 
-following code can be used as a template for importing a CSV file, as long as the folder and
+following code can be used as a template for importing a .CSV file, as long as the folder and
 file names are updated to reflect the correct file pathways, and creating lists and dictionaries
 for candidates, counties, and vote totals, and creating strings and integers for output to 
 determine the winning candidate:
 
 ![Import CSV](https://github.com/greensleeves8/Election_Analysis/blob/master/analysis/Code_Screenshot.png "Import CSV")
 
-To open and read your CSV, use this code, updating variable names as needed:
+To open and read your .CSV, use this code, updating variable names as needed:
 
 ```
 with open(file_to_load) as election_data:
@@ -61,7 +61,7 @@ with open(file_to_load) as election_data:
 
 To compile the names of the candidates and counties from a .CSV with a header row, and begin
 vote counts for candidate and county (index numbers for columns may need to be changed to the
-appropriate number if the election data has additional information columns):
+appropriate number if the election data used has additional information columns):
 
 ```
 header = next(reader)
@@ -91,8 +91,14 @@ for row in reader:
         votes_by_county[county_name] += 1
 ```
 
+And the following screenshots may be used as templates to determine the county results and 
+voter turnout, and the candidate total votes and winning candidate:
 
+![County votes and turnout](https://github.com/greensleeves8/Election_Analysis/blob/master/analysis/County_Votes.png "County Totals")
 
-Election-Audit Summary: In a summary statement, provide a business proposal to the election 
-commission on how this script can be used—with some modifications—for any election. Give at 
-least two examples of how this script can be modified to be used for other elections.
+![Candidate Totals and Winner](https://github.com/greensleeves8/Election_Analysis/blob/master/analysis/Candidate_Votes.png "Candidate Totals and Winner")
+
+With simple modifications this code can be easily adapted to other local congressional cases,
+and should also work with larger datasets for statewide races, such as Senate or Gubanatorial 
+races. 
+
