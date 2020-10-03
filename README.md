@@ -99,6 +99,6 @@ voter turnout, and the candidate total votes and winning candidate:
 ![Candidate Totals and Winner](https://github.com/greensleeves8/Election_Analysis/blob/master/analysis/Candidate_Votes.png "Candidate Totals and Winner")
 
 With simple modifications this code can be easily adapted to other local congressional cases,
-and should also work with larger datasets for statewide races, such as Senate or Gubanatorial 
+and should also work with larger datasets for statewide races, such as Senate or Gubernatorial 
 races. 
 
